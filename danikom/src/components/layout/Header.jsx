@@ -38,7 +38,7 @@ export default function Header() {
               className="md:hidden text-white hover:text-green-300 transition-colors duration-200"
               onClick={() => setOpen(!open)}
             >
-              {open ? <X size={28} /> : <Menu size={28} />}
+              {open ? <X size={29} /> : <Menu size={28} />}
             </button>
           </div>
 
