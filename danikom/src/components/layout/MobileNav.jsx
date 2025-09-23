@@ -4,9 +4,9 @@ import { X, Home, User, Package, Phone, Sparkles } from 'lucide-react'
 
 const navLinks = [
   { name: 'Home', path: '/', icon: Home },
-  { name: 'About', path: '/about', icon: User },
-  { name: 'Products', path: '/products', icon: Package },
-  { name: 'Contact', path: '/contact', icon: Phone },
+  { name: 'About Us', path: '/about', icon: User },
+  { name: 'Our Products', path: '/products', icon: Package },
+  { name: 'Contact Us', path: '/contact', icon: Phone },
 ]
 
 export default function MobileNav({ open, onClose }) {
@@ -61,7 +61,7 @@ export default function MobileNav({ open, onClose }) {
               className={({ isActive }) =>
                 `flex items-center gap-4 text-lg font-semibold py-4 px-6 rounded-xl transition-all ${
                   isActive
-                    ? 'bg-green-500 text-white'
+                    ? 'bg-green-300 text-white'
                     : 'bg-white/10 text-white hover:bg-white/20'
                 }`
               }
