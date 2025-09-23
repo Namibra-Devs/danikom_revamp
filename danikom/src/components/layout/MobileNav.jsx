@@ -12,7 +12,7 @@ export default function MobileNav({ open, onClose }) {
   if (!open) return null
 
   return (
-    <div className="md:hidden bg-white shadow-lg border-t">
+    <div className="md:hidden bg-[#6610f2] shadow-lg border-t">
       <nav className="flex flex-col px-4 py-3 gap-3">
         {navLinks.map((link) => (
           <NavLink
@@ -21,7 +21,7 @@ export default function MobileNav({ open, onClose }) {
             onClick={onClose}
             className={({ isActive }) =>
               `block font-medium py-2 rounded hover:bg-accent/10 ${
-                isActive ? 'text-accent' : 'text-gray-700'
+                isActive ? 'text-accent' : 'text-white'
               }`
             }
           >
