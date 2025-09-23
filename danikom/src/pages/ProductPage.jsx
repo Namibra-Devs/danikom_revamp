@@ -9,7 +9,7 @@ export default function ProductPage() {
     name: 'Sample Product',
     description: 'This is a placeholder description for ' + slug,
     price: '9.99',
-    image: '/src/assets/images/shea-1.jpg',
+    image: '/images/shea.jpeg',
   }
 
   return (

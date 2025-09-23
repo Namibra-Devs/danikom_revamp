@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Hero(){
 return (
-<section className="bg-[url('/src/assets/images/hero.jpg')] bg-cover bg-center">
+<section className="bg-[url('/images/hero1.png')] bg-cover bg-center">
 <div className="backdrop-brightness-75">
 <div className="max-w-6xl mx-auto px-4 py-28 flex items-center">
 <div className="max-w-2xl text-white">
