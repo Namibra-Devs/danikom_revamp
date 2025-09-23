@@ -35,7 +35,7 @@ export default function Header() {
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden text-white hover:text-green-300 transition-colors duration-200"
+              className="md:hidden text-white hover:text-green-400 transition-colors duration-200"
               onClick={() => setOpen(!open)}
             >
               {open ? <X size={29} /> : <Menu size={28} />}
