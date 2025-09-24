@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Linkedin, Mail } from 'lucide-react'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -10,9 +10,9 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white">Danikom</h3>
           <p className="mt-3 text-sm leading-relaxed">
-            Producers of unrefined Shea butter and African Black soap,
-            sourced directly from rural women cooperatives in northern Ghana.
-            Exporting globally with sustainability at heart.
+            Producers of unrefined Shea butter and African Black soap, sourced
+            directly from rural women cooperatives in northern Ghana. Exporting
+            globally with sustainability at heart.
           </p>
         </div>
 
@@ -20,10 +20,26 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white">Quick Links</h3>
           <ul className="mt-3 space-y-2 text-sm">
-            <li><Link to="/" className="hover:text-accent">Home</Link></li>
-            <li><Link to="/about" className="hover:text-accent">About Us</Link></li>
-            <li><Link to="/products" className="hover:text-accent">Products</Link></li>
-            <li><Link to="/contact" className="hover:text-accent">Contact</Link></li>
+            <li>
+              <Link to="/" className="hover:text-accent">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-accent">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link to="/products" className="hover:text-accent">
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-accent">
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -31,11 +47,22 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white">Get in Touch</h3>
           <p className="mt-3 text-sm">Email: info@danikom.com</p>
+          <p className="mt-3 text-sm">Contact: +233 (0) 24 662 6516</p>
+          <p className="mt-3 text-sm">P. O. Box 3061, Tamale, Ghana NT – 0299 – 7389
+          </p>
           <div className="flex gap-4 mt-4">
-            <a href="#" className="hover:text-accent"><Facebook /></a>
-            <a href="#" className="hover:text-accent"><Instagram /></a>
-            <a href="#" className="hover:text-accent"><Linkedin /></a>
-            <a href="mailto:info@danikom.com" className="hover:text-accent"><Mail /></a>
+            <a href="#" className="hover:text-accent">
+              <Facebook />
+            </a>
+            <a href="#" className="hover:text-accent">
+              <Instagram />
+            </a>
+            <a href="#" className="hover:text-accent">
+              <Linkedin />
+            </a>
+            <a href="mailto:info@danikom.com" className="hover:text-accent">
+              <Mail />
+            </a>
           </div>
         </div>
       </div>
@@ -45,5 +72,5 @@ export default function Footer() {
         © {new Date().getFullYear()} Danikom. All rights reserved.
       </div>
     </footer>
-  )
+  );
 }
