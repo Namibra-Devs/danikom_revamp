@@ -4,6 +4,7 @@ import CoopStory from "@components/sections/CoopStory";
 import ProductGallery from "@components/sections/ProductGallery";
 import CountriesSection from "@components/sections/CountriesSection";
 import Testimonials from "@components/sections/Testimonials";
+import FAQ from "@components/sections/FAQ";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <ProductGallery />
       <CountriesSection />
       <Testimonials />  
+      <FAQ />
     </div>
   );
 }
