@@ -67,7 +67,7 @@ const ProductGallery = () => {
       reviews: 56,
       description: 'Luxurious shea butter cream for daily moisturizing.',
       features: ['Deep hydration', 'Non-greasy', 'Fast absorbing'],
-      inStock: false,
+      inStock: true,
       isNew: false
     },
     {
