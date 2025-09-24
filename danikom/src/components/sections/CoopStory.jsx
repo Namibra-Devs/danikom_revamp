@@ -64,9 +64,9 @@ const CoopStory = () => {
           {/* Image Section */}
           <div className="relative" data-aos="fade-right">
             <img
-              src="/images/log1.jpg"
+              src="/images/story.jpg"
               alt="Women cooperative members producing shea butter"
-              className="rounded-2xl shadow-sm w-full h-64 sm:h-80 md:h-96 object-cover"
+              className="rounded-2xl shadow-sm w-full h-80 sm:h-80 md:h-96 object-cover"
             />
             <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 sm:p-6 rounded-tl-2xl rounded-br-2xl shadow-sm">
               <div className="text-2xl sm:text-3xl font-bold">15+</div>

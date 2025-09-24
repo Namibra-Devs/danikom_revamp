@@ -117,7 +117,7 @@ const FAQ = () => {
               {/* Image Container */}
               <div className="relative mb-8">
                 <img
-                  src="/images/log2.jpg"
+                  src="/images/dani-log.jpg"
                   alt="Danikom Quality Assurance"
                   className="w-full h-64 object-cover rounded-2xl shadow-2xl"
                 />
