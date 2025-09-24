@@ -22,7 +22,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "/images/cashew1.jpg",
+    image: "/images/cashew3.jpg",
     title: "Premium Cashew Nut Products",
     subtitle: "Nutritious • Versatile • Delicious",
     description:
@@ -40,7 +40,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "/images/shea2.jpg",
+    image: "/images/shea5.jpg",
     title: "Pure Unrefined Shea Butter",
     subtitle: "Organic • Moisturizing • Healing",
     description:
