@@ -3,6 +3,7 @@ import Hero from "@components/sections/Hero";
 import CoopStory from "@components/sections/CoopStory";
 import ProductGallery from "@components/sections/ProductGallery";
 import CountriesSection from "@components/sections/CountriesSection";
+import Testimonials from "@components/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <CoopStory />
       <ProductGallery />
       <CountriesSection />
+      <Testimonials />  
     </div>
   );
 }
