@@ -10,61 +10,61 @@ const CountriesSection = () => {
       name: 'United States', 
       flag: '/images/usa.png',
       cities: ['New York', 'California', 'Texas'],
-      shipments: 150
+      shipments: 20
     },
     { 
       name: 'Canada', 
       flag: '/images/canada.jpg',
       cities: ['Toronto', 'Vancouver', 'Montreal'],
-      shipments: 89
+      shipments: 30
     },
     { 
       name: 'Poland', 
       flag: '/images/poland.png',
       cities: ['Warsaw', 'Krakow', 'Gdansk'],
-      shipments: 67
+      shipments: 8
     },
     { 
       name: 'Italy', 
       flag: '/images/italy.webp',
       cities: ['Milan', 'Rome', 'Naples'],
-      shipments: 54
+      shipments: 9
     },
     { 
       name: 'Bulgaria', 
       flag: '/images/bulgaria.png',
       cities: ['Sofia', 'Plovdiv', 'Varna'],
-      shipments: 42
+      shipments: 10
     },
     { 
       name: 'Botswana', 
       flag: '/images/botswana.png',
       cities: ['Gaborone', 'Francistown', 'Maun'],
-      shipments: 38
+      shipments: 30
     },
     { 
       name: 'Zambia', 
       flag: '/images/zambia.png',
       cities: ['Lusaka', 'Livingstone', 'Ndola'],
-      shipments: 31
+      shipments: 10
     },
     { 
       name: 'Egypt', 
       flag: '/images/egypt.png',
       cities: ['Cairo', 'Alexandria', 'Giza'],
-      shipments: 45
+      shipments: 12
     },
     { 
       name: 'Germany', 
       flag: '/images/germany.png',
       cities: ['Berlin', 'Hamburg', 'Munich'],
-      shipments: 72
+      shipments: 17
     },
     { 
       name: 'France', 
       flag: '/images/france.png',
       cities: ['Paris', 'Lyon', 'Marseille'],
-      shipments: 58
+      shipments: 20
     }
   ]
 
