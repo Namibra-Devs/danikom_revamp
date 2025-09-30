@@ -21,23 +21,24 @@ const slides = [
     secondaryLink: "/about#black-soap",
   },
   {
-    id: 2,
-    image: "/images/cashew3.jpg",
-    title: "Premium Cashew Nut Products",
-    subtitle: "Nutritious • Versatile • Delicious",
-    description:
-      "Discover our range of cashew products sourced from West Africa's finest harvests. Rich in nutrients and perfect for healthy snacking.",
-    features: [
-      "Rich in antioxidants",
-      "Heart healthy",
-      "Protein packed",
-      "Gluten free",
-    ],
-    ctaPrimary: "Explore Cashew Products",
-    ctaSecondary: "Nutrition Facts",
-    primaryLink: "/products/cashew",
-    secondaryLink: "/about#cashew",
-  },
+  id: 2,
+  image: "/images/cocoa1.webp",
+  title: "Natural Cocoa Butter",
+  subtitle: "Nourishing • Pure • Versatile",
+  description:
+    "Experience the richness of natural cocoa butter, carefully sourced from West Africa. Perfect for skincare, hair care, and natural wellness applications.",
+  features: [
+    "Moisturizing",
+    "Rich in vitamins",
+    "Healthy skin elasticity",
+    "Naturally soothing",
+  ],
+  ctaPrimary: "Explore Cocoa Butter",
+  ctaSecondary: "Benefits & Uses",
+  primaryLink: "/products/cocoa-butter",
+  secondaryLink: "/about#cocoa-butter",
+},
+
   {
     id: 3,
     image: "/images/shea5.jpg",
