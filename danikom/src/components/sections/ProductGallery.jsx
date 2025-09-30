@@ -10,7 +10,8 @@ const ProductGallery = () => {
     { id: 'all', name: 'All Products' },
     { id: 'shea', name: 'Shea Butter' },
     { id: 'black-soap', name: 'Black Soap' },
-    { id: 'cashew', name: 'Cashew Products' },
+    { id: 'cocoa', name: 'Cocoa Butter' },
+    { id: 'cosmetics', name: 'Cosmetics' },
     
   ]
 
@@ -44,19 +45,23 @@ const ProductGallery = () => {
       isNew: false
     },
     {
-      id: 3,
-      name: 'Premium Cashew Nuts',
-      category: 'cashew',
-      price: 32.99,
-      originalPrice: 38.99,
-      image: '/images/cashew2.jpg',
-      rating: 4.9,
-      reviews: 67,
-      description: 'Grade A cashew nuts, perfect for snacking and cooking.',
-      features: ['Rich in antioxidants', 'Protein packed', 'Gluten free'],
-      inStock: true,
-      isNew: true
-    },
+  id: 3,
+  name: "Natural Cocoa Butter",
+  category: "cocoa",
+  price: 25.99,
+  originalPrice: 30.99,
+  image: "/images/cocoa2.webp",
+  rating: 4.8,
+  reviews: 54,
+  description: "Pure, unrefined cocoa butter sourced from West Africa — ideal for skincare and natural wellness.",
+  features: [
+    "Deeply moisturizing",
+    "Rich in antioxidants",
+    "Skin elasticity"
+  ],
+  inStock: true,
+  isNew: true
+},
     {
       id: 4,
       name: 'Shea Butter Cream',
@@ -72,7 +77,7 @@ const ProductGallery = () => {
     },
     {
       id: 5,
-      name: 'Black Soap Shampoo',
+      name: 'Black Soap Paste',
       category: 'black-soap',
       price: 21.99,
       image: '/images/shea1.jpg',
@@ -83,19 +88,80 @@ const ProductGallery = () => {
       inStock: true,
       isNew: true
     },
-    {
-      id: 6,
-      name: 'Cashew Butter',
-      category: 'cashew',
-      price: 26.99,
-      image: '/images/cashew1.jpg',
-      rating: 4.8,
-      reviews: 23,
-      description: 'Creamy cashew butter made from premium roasted cashews.',
-      features: ['No additives', 'High protein', 'Keto friendly'],
-      inStock: true,
-      isNew: false
-    }
+   {
+  id: 6,
+  name: "Premium Cocoa Butter Blocks",
+  category: "cocoa",
+  price: 45.99,
+  originalPrice: 52.99,
+  image: "/images/cocoa.webp",
+  rating: 4.9,
+  reviews: 73,
+  description: "Solid cocoa butter blocks, perfect for cosmetic formulations, lotions, and body butters.",
+  features: [
+    "100% natural & raw",
+    "Soothes dry skin",
+    "Great cosmetics"
+  ],
+  inStock: true,
+  isNew: false
+},
+{
+  id: 7,
+  name: "Cocoa Butter Body Lotion",
+  category: "cosmetics",
+  price: 18.99,
+  originalPrice: 22.99,
+  image: "/images/cosmetics1.webp",
+  rating: 4.7,
+  reviews: 41,
+  description: "Luxurious cocoa butter lotion that nourishes and softens skin all day long.",
+  features: [
+    "Hydrates & smooths",
+    "Enriched with vitamins",
+    "Gentle on all skin types"
+  ],
+  inStock: true,
+  isNew: true
+},
+{
+  id: 8,
+  name: "Cocoa Butter Lip Balm",
+  category: "cosmetics",
+  price: 6.99,
+  originalPrice: 8.99,
+  image: "/images/cosmetics.jpg",
+  rating: 4.8,
+  reviews: 29,
+  description: "Natural cocoa butter lip balm that keeps your lips soft, smooth, and protected.",
+  features: [
+    "Moisturizes & heals",
+    "Long-lasting protection",
+    "Natural fragrance"
+  ],
+  inStock: true,
+  isNew: false
+},
+{
+  id: 9,
+  name: "Unrefined Shea Butter",
+  category: "shea",
+  price: 28.99,
+  originalPrice: 34.99,
+  image: "/images/shea4.webp",
+  rating: 4.9,
+  reviews: 85,
+  description: "Pure, unrefined shea butter sourced from women’s cooperatives in Northern Ghana. Perfect for skin, hair, and natural wellness care.",
+  features: [
+    "100% natural & organic",
+    "Deeply moisturizing",
+    "Rich in vitamins A, E & F",
+    "Supports skin healing"
+  ],
+  inStock: true,
+  isNew: true
+}
+
   ]
 
   const filteredProducts = activeCategory === 'all' 
@@ -117,7 +183,7 @@ const ProductGallery = () => {
             Our Premium Products
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Discover our range of authentic African natural products, ethically sourced and crafted with care.
+            Discover our range of authentic African natural products, ethically sourced and hand crafted with care.
           </p>
         </motion.div>
 
@@ -233,31 +299,6 @@ const ProductGallery = () => {
                   ))}
                 </div>
 
-                {/* Price and CTA */}
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <span className="text-2xl font-bold text-gray-900">
-                      ₵{product.price}
-                    </span>
-                    {product.originalPrice && (
-                      <span className="text-lg text-gray-400 line-through">
-                        ₵{product.originalPrice}
-                      </span>
-                    )}
-                  </div>
-
-                  <button 
-                    disabled={!product.inStock}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                      product.inStock
-                        ? 'bg-green-500 hover:bg-green-600 text-white shadow-lg hover:shadow-xl'
-                        : 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                    }`}
-                  >
-                    <ShoppingCart size={18} />
-                    {product.inStock ? 'Add to Cart' : 'Out of Stock'}
-                  </button>
-                </div>
               </div>
             </motion.div>
           ))}

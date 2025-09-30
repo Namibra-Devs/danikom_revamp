@@ -11,13 +11,13 @@ const CoopStory = () => {
   const features = [
     {
       icon: Ship,
-      number: "500+",
+      number: "100+",
       label: "Great Shipping",
       description: "Reliable worldwide delivery to 10+ countries",
     },
     {
       icon: CreditCard,
-      number: "50+",
+      number: "5+",
       label: "Flexible Payment",
       description: "Multiple secure payment options available",
     },
@@ -69,7 +69,7 @@ const CoopStory = () => {
               className="rounded-2xl shadow-sm w-full h-80 sm:h-80 md:h-96 object-cover"
             />
             <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-4 sm:p-6 rounded-tl-2xl rounded-br-2xl shadow-sm">
-              <div className="text-2xl sm:text-3xl font-bold">15+</div>
+              <div className="text-2xl sm:text-3xl font-bold">9+</div>
               <div className="text-xs sm:text-sm">Years of Excellence</div>
             </div>
           </div>
@@ -88,7 +88,7 @@ const CoopStory = () => {
               <p>
                 Our brand stands at the intersection of tradition and modernity,
                 producing unrefined Shea butter and African Black soap sourced
-                directly from rural women cooperatives in northern Ghana.
+                directly from rural women cooperatives in Northern and Savannah Regions of Ghana.
               </p>
               <p>
                 We are not just a business; we are a bridge connecting these
