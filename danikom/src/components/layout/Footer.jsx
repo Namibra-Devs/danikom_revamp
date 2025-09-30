@@ -48,7 +48,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-white">Get in Touch</h3>
           <p className="mt-3 text-sm">Email: info@danikom.com</p>
           <p className="mt-3 text-sm">Contact: +233 (0) 24 662 6516</p>
-          <p className="mt-3 text-sm">P. O. Box 3061, Tamale, Ghana NT – 0299 – 7389
+          <p className="mt-3 text-sm">P. O. Box 3061, Tamale, Ghana <br />  NT – 0299 – 7389
           </p>
           <div className="flex gap-4 mt-4">
             <a href="#" className="hover:text-accent">
