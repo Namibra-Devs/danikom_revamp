@@ -19,18 +19,18 @@ const CustomerStories = () => {
     },
     {
       id: 2,
-      name: "Kwame Asante",
-      location: "Kumasi, Ghana",
-      role: "Export Business Owner",
+      name: "Esinam Agbley",
+      location: "USA",
+      role: "Business Owner",
       rating: 5,
       content:
-        "As someone who exports Ghanaian products, I can attest to Danikom's exceptional quality. Their cashew nuts meet international standards and clients always reorder.",
+        "As someone who imports authentic hand crafted Danikom products, I can attest to Danikom's exceptional quality. Their Shea Butter meet international standards and clients always reorder.",
       product: "Premium Cashew Nuts",
     },
     {
       id: 3,
-      name: "Abena Osei",
-      location: "Tamale, Ghana",
+      name: "Richard N. Puni",
+      location: "Botswana",
       role: "Traditional Skincare Practitioner",
       rating: 5,
       content:
@@ -39,22 +39,22 @@ const CustomerStories = () => {
     },
     {
       id: 4,
-      name: "Kofi Ampofo",
-      location: "Takoradi, Ghana",
+      name: "Nicolas Sati",
+      location: "Kenya",
       role: "Hotel Supplier",
       rating: 4,
       content:
-        "We supply Danikom products to luxury hotels in Ghana. The consistency and quality have helped us build strong relationships with international hospitality brands.",
+        "We supply Danikom products to luxury hotels in Kenya. The consistency and quality have helped us build strong relationships with international hospitality brands.",
       product: "Multiple Products",
     },
     {
       id: 5,
-      name: "Ama Serwaa",
-      location: "Cape Coast, Ghana",
+      name: "Charles Alemna",
+      location: "Zambia",
       role: "Spa Manager",
       rating: 5,
       content:
-        "Our clients appreciate the authentic Ghanaian products we use. Danikom's natural oils and butters have elevated our spa services significantly.",
+        "Our clients appreciate the authentic Danikom products we use. Danikom's natural oils and butters have elevated our spa services significantly.",
       product: "Natural Oils Collection",
     },
   ];
@@ -110,7 +110,7 @@ const CustomerStories = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Trusted by Ghanaian Businesses
+            Trusted by Local and Global Brands
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Discover why local experts choose Danikom for authentic Ghanaian
@@ -173,7 +173,7 @@ const CustomerStories = () => {
                         Authentic Ghanaian Quality
                       </p>
                       <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full">
-                        <span className="text-sm">Since 2008</span>
+                        <span className="text-sm">Since 2016</span>
                       </div>
                     </div>
                   </div>
@@ -211,15 +211,15 @@ const CustomerStories = () => {
           viewport={{ once: true }}
         >
           <div className="bg-white rounded-2xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-purple-600 mb-2">4.9/5</div>
-            <div className="text-gray-600">Average Rating</div>
+            <div className="text-3xl font-bold text-purple-600 mb-2">25+</div>
+            <div className="text-gray-600">International Partners</div>
           </div>
           <div className="bg-white rounded-2xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-green-600 mb-2">100+</div>
+            <div className="text-3xl font-bold text-green-600 mb-2">15+</div>
             <div className="text-gray-600">Local Partners</div>
           </div>
           <div className="bg-white rounded-2xl p-6 shadow-lg">
-            <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
+            <div className="text-3xl font-bold text-purple-600 mb-2">9+</div>
             <div className="text-gray-600">Years in Ghana</div>
           </div>
           <div className="bg-white rounded-2xl p-6 shadow-lg">

@@ -15,16 +15,16 @@ const FAQ = () => {
       answer: "We implement strict quality control measures at every stage - from sourcing raw materials to final packaging. Our products are tested for purity, and we work closely with cooperatives to maintain traditional standards while ensuring hygiene and safety."
     },
     {
-      question: "What countries do you ship to?",
-      answer: "We currently ship to over 10 countries including USA, Canada, Poland, Italy, Bulgaria, Botswana, Zambia, Egypt, Germany, and France. Shipping times vary by location but typically range from 7-21 business days."
+      question: "Which countries do you ship to?",
+      answer: "We currently ship to over 10 countries including USA, Canada, Poland, Italy, Bulgaria, Botswana, Zambia, Egypt, Kenya and still counting..."
     },
     {
       question: "Are your products ethically sourced?",
-      answer: "Absolutely. We're committed to fair trade practices. We work directly with women cooperatives in Ghana, ensuring fair wages, safe working conditions, and community development initiatives. A portion of our profits goes back into these communities."
+      answer: "Absolutely yes. We're committed to fair trade practices. We work directly with women cooperatives in Ghana, ensuring fair wages, safe working conditions, and community development initiatives. A portion of our profits goes back into these communities."
     },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept various payment methods including credit cards (Visa, MasterCard, American Express), PayPal, bank transfers, and mobile money for local Ghanaian customers. All payments are processed securely."
+      answer: "You can make payment for your orders via Bank-to-Bank Swift Transfer, Credit Card, Debit Card or MasterCard. Kindly prompt us with Proof of Payment (POP - deposit slip, swift advice, etc.) via email or WhatsApp."
     }
   ]
 
@@ -122,7 +122,7 @@ const FAQ = () => {
                   className="w-full h-64 object-cover rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-4 -right-4 bg-green-500 text-white p-4 rounded-tr-3xl rounded-bl-3xl shadow-lg">
-                  <div className="text-2xl font-bold">15+</div>
+                  <div className="text-2xl font-bold">9+</div>
                   <div className="text-sm">Years Experience</div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const FAQ = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                    <span>100% natural and authentic products</span>
+                    <span>100% natural, hand crafted and authentic products</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-green-400 rounded-full"></div>
@@ -218,7 +218,7 @@ const FAQ = () => {
             <div className="text-gray-600">Satisfaction Guarantee</div>
           </div>
           <div className="bg-white rounded-2xl p-6 shadow-lg">
-            <div className="text-2xl font-bold text-purple-600 mb-2">15+</div>
+            <div className="text-2xl font-bold text-purple-600 mb-2">4+</div>
             <div className="text-gray-600">Languages Supported</div>
           </div>
         </motion.div>
