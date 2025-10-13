@@ -13,9 +13,16 @@ import {
 } from "lucide-react";
 import ProductGrid from "@components/ProductGrid";
 
+// Import your images
+import sheaButterCategory from "/images/shea4.webp";
+import blackSoapCategory from "/images/black2.webp";
+import cocoaButterCategory from "/images/cocoabutter.jpeg";
+import cosmeticsCategory from "/images/cosmetics.jpg";
+import cashewCategory from "/images/cashew2.jpg";
+import heroBg from "/images/products-hero.jpg";
+
 export default function Products() {
   const [expandedCategory, setExpandedCategory] = useState(null);
-  const [activeCategory, setActiveCategory] = useState("all");
 
   const productCategories = [
     {
@@ -28,9 +35,9 @@ export default function Products() {
       ],
       description:
         "100% pure, unrefined shea butter sourced directly from women cooperatives in Northern Ghana",
-      image: "/images/shea.jpg",
+      image: sheaButterCategory,
       features: ["Deep Moisturizing", "Skin Healing", "Anti-inflammatory"],
-      color: "from-purple-700 to-purple-700",
+      color: "from-purple-500 to-purple-700",
     },
     {
       name: "African Black Soap",
@@ -42,10 +49,10 @@ export default function Products() {
         "Black Soap & Shea Combo",
       ],
       description:
-        "Authentic African black soap made using traditional methods for clear, healthy skin",
-      image: "/images/products/blacksoap-category.jpg",
+        "This soap is made with all natural ingredients for your bath and hair wash experience. Ours is enriched with shea butter and palm kernel oil. All natural - No chemicals nor animal-derived ingredients added.",
+      image: blackSoapCategory,
       features: ["Natural Cleansing", "Acne Treatment", "Skin Balancing"],
-      color: "from-green-700 to-green-700",
+      color: "from-green-500 to-green-700",
     },
     {
       name: "Cocoa Butter",
@@ -57,9 +64,9 @@ export default function Products() {
       ],
       description:
         "Rich, nourishing cocoa butter for intense skin hydration and repair",
-      image: "/images/products/cocoabutter-category.jpg",
+      image: cocoaButterCategory,
       features: ["Intense Hydration", "Skin Repair", "Stretch Mark Prevention"],
-      color: "from-purple-600 to-purple-600",
+      color: "from-amber-500 to-amber-700",
     },
     {
       name: "Cosmetics",
@@ -67,9 +74,9 @@ export default function Products() {
       subProducts: ["Lip Balms", "Body Butters", "Hair Products", "Face Cream"],
       description:
         "Natural cosmetic products infused with African botanical ingredients",
-      image: "/images/products/cosmetics-category.jpg",
+      image: cosmeticsCategory,
       features: ["Natural Ingredients", "Cruelty Free", "Vegan Options"],
-      color: "from-green-600 to-green-600",
+      color: "from-pink-500 to-pink-700",
     },
     {
       name: "Cashews",
@@ -83,9 +90,9 @@ export default function Products() {
       ],
       description:
         "Grade A cashew nuts and derivatives from West Africa's finest harvests",
-      image: "/images/products/cashew-category.jpg",
+      image: cashewCategory,
       features: ["Rich in Antioxidants", "Protein Packed", "Heart Healthy"],
-      color: "from-purple-700 to-purple-700",
+      color: "from-orange-500 to-orange-700",
     },
   ];
 
@@ -119,18 +126,7 @@ export default function Products() {
   };
 
   const handleExploreCategory = (categoryId) => {
-    if (expandedCategory === categoryId) {
-      setExpandedCategory(null);
-      setActiveCategory("all");
-    } else {
-      setExpandedCategory(categoryId);
-      setActiveCategory(categoryId);
-    }
-  };
-
-  const handleViewAllProducts = () => {
-    setExpandedCategory(null);
-    setActiveCategory("all");
+    setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
   };
 
   return (
@@ -139,10 +135,11 @@ export default function Products() {
       <section className="relative h-98  overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/products-hero.jpg')" }}
+          style={{ backgroundImage: `url(${heroBg})` }}
         >
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
+        <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 h-full flex items-center justify-center text-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -154,8 +151,8 @@ export default function Products() {
               Our Products
             </h1>
             <p className="text-xl md:text-2xl text-purple-100 max-w-3xl mx-auto leading-relaxed">
-              Premium African Natural Products, Ethically Sourced and Crafted
-              with Care
+              Discover our range of authentic African natural products, each
+              crafted with traditional methods and modern quality standards.
             </p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -164,10 +161,10 @@ export default function Products() {
               className="flex gap-4 justify-center mt-8 flex-wrap"
             >
               <a
-                href="#products"
+                href="#categories"
                 className="px-8 py-4 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
-                View Products
+                Browse Categories
               </a>
               <a
                 href="https://your-ecommerce-store.com"
@@ -213,21 +210,20 @@ export default function Products() {
       </section>
 
       {/* Product Categories Section */}
-      <section className="py-20 bg-white">
+      <section id="categories" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center mb-10 md:mb-16"
+            className="text-center mb-16"
           >
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-3 md:mb-4">
-              Our Premium Products
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Product Categories
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-2">
-              Discover our range of authentic African natural products,
-              ethically sourced and hand crafted with care.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Click on any category to explore its products
             </p>
           </motion.div>
 
@@ -239,55 +235,90 @@ export default function Products() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={`bg-gradient-to-r ${category.color} rounded-2xl shadow-lg overflow-hidden`}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200"
               >
-                {/* Category Header */}
-                <button
-                  onClick={() => handleExploreCategory(category.id)}
-                  className="w-full text-left p-5 sm:p-8 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 hover:bg-black/5 transition-colors"
-                >
-                  <div className="flex-1">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-3">
-                      {category.name}
-                    </h3>
-                    <p className="text-white/90 text-sm sm:text-lg mb-3 sm:mb-4 max-w-3xl">
-                      {category.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mb-3 sm:mb-4">
-                      {category.features.map((feature, featureIndex) => (
-                        <span
-                          key={featureIndex}
-                          className="px-2 sm:px-3 py-1 bg-white/20 text-white text-xs sm:text-sm rounded-full border border-white/30"
-                        >
-                          {feature}
-                        </span>
-                      ))}
+                {/* Category Header - Always Visible */}
+                <div className="p-8">
+                  <div className="grid lg:grid-cols-2 gap-8 items-center">
+                    {/* Category Image */}
+                    <div className="relative">
+                      <img
+                        src={category.image}
+                        alt={category.name}
+                        className="w-full h-64 object-cover rounded-xl shadow-md"
+                        onError={(e) => {
+                          e.target.style.display = "none";
+                          e.target.nextSibling.style.display = "flex";
+                        }}
+                      />
+                      <div
+                        className="hidden w-full h-64 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl items-center justify-center flex-col"
+                        style={{ display: category.image ? "none" : "flex" }}
+                      >
+                        <div className="text-4xl mb-2">
+                          {category.name === "Shea Butter" && "🧴"}
+                          {category.name === "African Black Soap" && "🧼"}
+                          {category.name === "Cocoa Butter" && "🍫"}
+                          {category.name === "Cosmetics" && "💄"}
+                          {category.name === "Cashews" && "🥜"}
+                        </div>
+                        <p className="text-gray-500 text-sm">Category Image</p>
+                      </div>
                     </div>
 
-                    <div className="flex flex-wrap items-center gap-1 sm:gap-2 text-white/90 text-xs sm:text-base">
-                      <span className="font-semibold">Includes:</span>
-                      <span>{category.subProducts.slice(0, 2).join(", ")}</span>
-                      {category.subProducts.length > 2 && (
-                        <span>and {category.subProducts.length - 2} more</span>
-                      )}
+                    {/* Category Info */}
+                    <div>
+                      <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                        {category.name}
+                      </h3>
+                      <p className="text-gray-700 text-lg mb-4 leading-relaxed">
+                        {category.description}
+                      </p>
+
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-gray-900 mb-2">
+                          Products Include:
+                        </h4>
+                        <ul className="space-y-1">
+                          {category.subProducts.map((product, productIndex) => (
+                            <li
+                              key={productIndex}
+                              className="flex items-center gap-2 text-gray-600"
+                            >
+                              <div className="w-1.5 h-1.5 bg-purple-500 rounded-full"></div>
+                              {product}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="flex flex-wrap gap-2 mb-6">
+                        {category.features.map((feature, featureIndex) => (
+                          <span
+                            key={featureIndex}
+                            className="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full border border-purple-200"
+                          >
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+
+                      <button
+                        onClick={() => handleExploreCategory(category.id)}
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-105"
+                      >
+                        {expandedCategory === category.id
+                          ? "Hide Products"
+                          : "Explore Products"}
+                        {expandedCategory === category.id ? (
+                          <ChevronUp size={20} />
+                        ) : (
+                          <ChevronDown size={20} />
+                        )}
+                      </button>
                     </div>
                   </div>
-
-                  {/* Explore button */}
-                  <div className="flex items-center gap-2 text-white justify-end sm:justify-center">
-                    <span className="font-semibold text-sm sm:text-base">
-                      {expandedCategory === category.id
-                        ? "Hide Products"
-                        : "Explore Products"}
-                    </span>
-                    {expandedCategory === category.id ? (
-                      <ChevronUp size={20} className="sm:w-6 sm:h-6" />
-                    ) : (
-                      <ChevronDown size={20} className="sm:w-6 sm:h-6" />
-                    )}
-                  </div>
-                </button>
+                </div>
 
                 {/* Expandable Product Grid */}
                 <AnimatePresence>
@@ -299,17 +330,18 @@ export default function Products() {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="p-5 sm:p-8 bg-white border-t">
-                        <div className="mb-4 sm:mb-6">
-                          <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">
+                      <div className="p-8 bg-gray-50 border-t">
+                        <div className="mb-6">
+                          <h4 className="text-xl font-bold text-gray-900 mb-2">
                             All {category.name} Products
                           </h4>
-                          <p className="text-gray-600 text-sm sm:text-base">
+                          <p className="text-gray-600">
                             Browse our complete range of{" "}
                             {category.name.toLowerCase()} products
                           </p>
                         </div>
 
+                        {/* Product Grid for this category */}
                         <ProductGrid
                           categoryFilter={category.id}
                           showCategoryHeader={false}
@@ -324,31 +356,21 @@ export default function Products() {
         </div>
       </section>
 
-      {/* All Products Section (when no category is expanded) */}
-      <AnimatePresence>
-        {!expandedCategory && (
-          <motion.section
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.5 }}
-            className="py-20 bg-gray-50"
-          >
-            <div className="max-w-7xl mx-auto px-4">
-              <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                  All Products
-                </h2>
-                <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                  Browse our complete product catalog
-                </p>
-              </div>
+      {/* All Products Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              All Products
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Browse our complete product catalog
+            </p>
+          </div>
 
-              <ProductGrid categoryFilter="all" showCategoryHeader={false} />
-            </div>
-          </motion.section>
-        )}
-      </AnimatePresence>
+          <ProductGrid categoryFilter="all" showCategoryHeader={false} />
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-purple-600 to-purple-800">
@@ -376,13 +398,15 @@ export default function Products() {
                 <ShoppingCart size={20} />
                 Visit E-commerce Store
               </a>
-              <button
-                onClick={generateFlowChart}
+              <a
+                href="/images/flowchart.PDF"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-purple-600 transition-all duration-300 flex items-center gap-2"
               >
                 <Download size={20} />
-                Download Flowchart (PDF)
-              </button>
+                View / Download Flowchart (PDF)
+              </a>
             </div>
           </motion.div>
         </div>

@@ -104,7 +104,7 @@ const CountriesSection = () => {
               x: {
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: 40,
+                duration: 15,
                 ease: "linear"
               }
             }}
