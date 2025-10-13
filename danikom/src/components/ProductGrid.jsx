@@ -24,7 +24,7 @@ const MOCK_PRODUCTS = [
     short: "Cold-pressed, raw, 100% pure shea butter",
     fullDescription:
       "Danikom Ghana Ltd produces premium handcrafted Unrefined Shea Butter, made by rural women using traditional methods that preserve all its natural benefits. This process not only ensures high-quality, chemical-free butter but also provides sustainable, year-round income for over 2,000 women across 18 communities in Northern and Savannah regions of Ghana. The company also produces Unrefined Yellow Shea Butter infused with Borututu Roots. Through this work, Danikom empowers women, promotes education—especially for girls—and upholds values of traceability and sustainability.",
- 
+
     slug: "pure-shea-250g",
     image: sheaButterPure,
     category: "Shea Butter",
@@ -47,7 +47,7 @@ const MOCK_PRODUCTS = [
     short: "Enriched with essential oils for daily use",
     fullDescription:
       "We produce our Borututu Yellow Shea Butter using the same traditional method we use in Ivory or white shea butter processing. The addition of Borututu roots is what makes the difference between our white or Ivory shea butter and the yellow shea butter. The introduction of borututu roots in the production process comes with additional benefits to the shea butter and also changes the colour of the Ivory or white shea butter to distinctive yellow either light or deep yellow colour depending on client choice. Our yellow shea butter is not harmful when consumed but is mostly used as raw material for cosmetic products.",
-   
+
     slug: "shea-cream-200ml",
     image: sheaButterCream,
     category: "Shea Butter",
@@ -68,7 +68,7 @@ const MOCK_PRODUCTS = [
     short: "Bulk size, perfect for DIY skincare",
     fullDescription:
       "This raw shea butter is perfect for DIY skincare enthusiasts and small businesses. Maintains all the natural properties of shea butter in its purest form. Use it to create your own creams, lotions, soaps, or use as a standalone treatment. Sourced directly from women cooperatives ensuring fair trade practices.",
-   
+
     slug: "raw-shea-500g",
     image: sheaButterRaw,
     category: "Shea Butter",
@@ -88,7 +88,7 @@ const MOCK_PRODUCTS = [
     short: "Handmade, authentic recipe for clear skin",
     fullDescription:
       "This is a traditional Ghanaian soap known as “Alata Samina” handcrafted by our women cooperatives in northern and Ashanti regions of Ghana. This soap is made with all natural ingredients for your bath and hair wash experience. Ours is enriched with shea butter and palm kernel oil.  All natural - No chemicals nor animal-derived ingredients added. With the presence of natural shea butter, this soap is gentle on the skin and makes your skin soft, smooth, and flawless. It is ideal for all skin types, including babies. This soap is recommended for those who want to maintain natural beauty and healthy skin care. It also helps to soothe irritation and inflammation, clears up pimples, and removes bacteria from the surface of the skin that can cause more break-outs, keeping you clean and fresh all day.",
- 
+
     slug: "blacksoap-traditional",
     image: blackSoapTraditional,
     category: "African Black Soap",
@@ -400,21 +400,6 @@ const ProductCard = ({ product }) => {
           <span className="text-xs text-gray-500">
             {product.rating} ({product.reviews})
           </span>
-        </div>
-
-        {/* Price and Stock */}
-        <div className="flex justify-between items-center">
-          <div className="text-right">
-            {product.inStock ? (
-              <span className="text-xs text-green-600 font-medium">
-                In Stock
-              </span>
-            ) : (
-              <span className="text-xs text-red-600 font-medium">
-                Out of Stock
-              </span>
-            )}
-          </div>
         </div>
       </div>
     </motion.div>

@@ -12,7 +12,7 @@ export default function Header() {
     <>
       {/* Header Bar */}
       <header
-        className={`sticky top-0 z-50 bg-[#4b0082] backdrop-blur shadow transition-opacity duration-300 ${
+        className={`sticky top-0 z-50 bg-purple-800 backdrop-blur shadow transition-opacity duration-300 ${
           open ? 'hidden' : 'block'
         }`}
       >
