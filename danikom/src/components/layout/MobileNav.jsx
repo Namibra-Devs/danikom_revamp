@@ -49,8 +49,8 @@ export default function MobileNav({ open, onClose }) {
               alt="Danikom Logo"
               className="h-16 w-auto rounded-lg shadow-2xl transform hover:scale-110 transition-transform duration-300"
             />
-            <Sparkles className="text-green-300" size={32} />
-          </div>F
+           
+          </div>
         {/* Navigation Links */}
         <nav className="flex flex-col gap-6 mt-12 w-full max-w-sm px-8">
           {navLinks.map(({ name, path, icon: Icon }) => (

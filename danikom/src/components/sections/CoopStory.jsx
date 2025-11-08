@@ -91,6 +91,9 @@ const CoopStory = () => {
                 directly from rural women cooperatives in Northern and Savannah Regions of Ghana.
               </p>
               <p>
+                        We work with over 17 shea nuts pickers and processor cooperatives in 17 communities in northern with over 1500 women membership. By buying from us, you would be contributing to empowering thousands of women who earn their daily income through shea.
+                </p>
+              <p>
                 We are not just a business; we are a bridge connecting these
                 artisans to the global market, exporting our products to the
                 USA, Canada, Poland, Italy, Bulgaria, Botswana, Zambia, Egypt

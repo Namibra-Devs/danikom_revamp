@@ -6,7 +6,7 @@ const slides = [
     id: 1,
     image: "/images/black2.webp",
     title: "Authentic African Black Soap",
-    subtitle: "Pure • Natural • Traditional",
+    subtitle: " Natural • Handcrafted • Ethically Sourced",
     description:
       "Handcrafted using centuries-old recipes. Our black soap deeply cleanses, exfoliates, and revitalizes skin with its rich antioxidant properties.",
     features: [
@@ -24,9 +24,9 @@ const slides = [
   id: 2,
   image: "/images/cocoa1.webp",
   title: "Natural Cocoa Butter",
-  subtitle: "Nourishing • Pure • Versatile",
+  subtitle: " Natural • Pure • Versatile",
   description:
-    "Experience the richness of natural cocoa butter, carefully sourced from West Africa. Perfect for skincare, hair care, and natural wellness applications.",
+    "Experience the richness of natural cocoa butter carefully sourced from Ghana, west Africa. Perfect for chocolate making, skincare and balms.",
   features: [
     "Moisturizing",
     "Rich in vitamins",
@@ -42,14 +42,32 @@ const slides = [
   {
     id: 3,
     image: "/images/shea5.jpg",
-    title: "Pure Unrefined Shea Butter",
-    subtitle: "Organic • Moisturizing • Healing",
+    title: "Pure Unrefined Shea Butter - IVORY",
+    subtitle: "All Natural• Handcrafted • Ethically Sourced. ",
     description:
       "Directly sourced from women cooperatives in Ghana. Our shea butter provides intense moisture and healing for skin and hair.",
     features: [
       "Deep moisturizing",
       "Skin healing",
       "Anti-inflammatory",
+      "Hair conditioning",
+    ],
+    ctaPrimary: "Buy Shea Butter",
+    ctaSecondary: "Uses & Benefits",
+    primaryLink: "/products/shea-butter",
+    secondaryLink: "/about#shea-butter",
+  },
+  {
+    id: 4,
+    image: "/images/shea3.avif",
+    title: "Pure Unrefined Shea Butter - YELLOW",
+    subtitle: "No Chemical• Handcrafted • Ethically Sourced. ",
+    description:
+      "Directly sourced from women cooperatives in Ghana. Our shea butter provides intense moisture and healing for skin and hair.",
+    features: [
+      "Natural",
+      "No Chemical Additives",
+      
       "Hair conditioning",
     ],
     ctaPrimary: "Buy Shea Butter",
