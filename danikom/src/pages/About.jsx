@@ -62,32 +62,26 @@ export default function About() {
   const values = [
     {
       icon: Heart,
-      title: "Authenticity ",
+      title: "Empowerment",
       description:
-        "We are dedicated to preserving the traditional methods of producing unrefined Shea butter and African Black soap. Our commitment to authenticity ensures that our products maintain their natural integrity and cultural significance, providing our customers with genuine, high-quality skincare solutions.",
+        "Creating sustainable livelihoods for women in rural communities",
     },
     {
       icon: Shield,
-      title: "Sustainability",
+      title: "Quality",
       description:
-        "We believe in responsible sourcing and production practices that respect both the environment and local communities. Our dedication to sustainability not only minimizes our ecological footprint but also supports the livelihoods of local women and families involved in the Shea butter and black soap production processes.",
+        "Maintaining traditional methods while ensuring highest standards",
     },
     {
       icon: Globe,
-      title: "Quality",
-      description: "At Danikom Ghana, we prioritize excellence in every aspect of our production. We meticulously handcraft our products to ensure they meet the highest standards of quality. This commitment to quality fosters trust and satisfaction among our customers, reinforcing our reputation as a leading provider of natural skincare products.",
+      title: "Sustainability",
+      description: "Ethical sourcing and environmentally conscious practices",
     },
     {
       icon: Users,
-      title: "Innovation  ",
+      title: "Community",
       description:
-        "While we uphold traditional practices, we also embrace innovation to enhance our product offerings and operational efficiency. By continually seeking new ways to improve our formulations and processes, we remain competitive in the market and better serve the evolving needs of our customers.",
-    },
-    {
-      icon: Heart,
-      title: "Community Women Empowerment",
-      description:
-        "We are committed to empowering the communities from which we source our ingredients. Through fair trade practices and community engagement, we strive to create opportunities for women and local artisans, enabling them to thrive economically and uphold their cultural heritage. This commitment strengthens the social fabric of our community and fosters long-term relationships with our partners. ",
+        "Investing back into the communities that make our products possible",
     },
   ];
 
@@ -277,58 +271,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Founder Story */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              The Story of our Founder – Daniel Kombat
-              </h2>
-              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-                <p>
-                  I grew up in a rural village in the Upper East Region of Ghana, helping my mother pick shea nuts. I saw how she and many other women would carry their shea butter or shea nuts to the market only to return home with their goods still unsold. Demand was low or inconsistent, and buyers weren’t accessible — many left with their harvests having earned nothing. Even as a child, I felt this was unfair. I believed there must be a way to connect these hardworking women to reliable markets, though at the time I didn’t know how.
-                </p>
-                <p>
-              After high school in 2001, I moved to Kumasi to live with my uncle. It was both a chance to get exposed to city life and to look for opportunities before continuing with further education. In Kumasi, I noticed that shea butter was in demand — people wanted it, shops sold it, but the supply chain was disjointed. The dream of helping my mother and other women by matching supply with demand was rekindled, though I had to return to school.
-                </p>
-                <p>
-                 Post tertiary education and my national service, I worked in insurance, eventually becoming a Sales Manager and Branch Manager. While working there, I began informally linking buyers of shea butter with women from my home village and other rural areas. I also started buying shea nuts seasonally to supply larger buyers. These small steps laid the foundation.
-                </p>
-                <p>
-                 The turning point came in 2014, when I attended an export seminar organized by the Ghana Export Promotion Authority. There, I learned how large the global demand for shea butter truly is — in the USA, Europe, China, and other African countries. I saw that this was more than a dream; it could be a solution that put income in the hands of the women, created livelihoods, and built something sustainable.
-                </p>
-                <p>
-                  In 2015, I incorporated Danikom Trading (now Danikom Ghana Ltd). From modest beginnings we have grown to export high‑quality, natural, handcrafted shea butter, African Black soap and cocoa butter to many countries including the USA, Canada, Italy, Poland, Bulgaria, Botswana, Zambia, Egypt, and more.
-                </p>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <img
-                src="/images/story1.jpg"
-                alt="Women cooperative members working"
-                className="rounded-2xl shadow-md w-full h-96 object-cover"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-green-500 text-white p-6 rounded-2xl shadow-lg">
-                <div className="text-3xl font-bold">9+</div>
-                <div className="text-sm">Years of Excellence</div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Vision & Mission Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
@@ -347,7 +289,9 @@ export default function About() {
                 <h3 className="text-2xl font-bold">Our Vision</h3>
               </div>
               <p className="text-lg leading-relaxed text-purple-100">
-              At Danikom Ghana, we envision a world where the richness of nature is celebrated and shared. Our commitment is to empower communities through the sustainable production of handcrafted unrefined shea butter, African Black soap, and natural cosmetics. We strive to be a global leader in the natural cosmetics industry, inspiring a movement that values authenticity, quality, and ethical practices. Together, we will nurture a future where beauty, wellness, and responsibility coexist harmoniously, enriching lives and preserving the planet for generations to come.
+                To be a world-class producer and supplier of natural shea
+                butter, Black Soap, and other Shea products.Our Core Values:
+                Credible & Reputable, Quality, Innovation & Timely Delivery.
               </p>
             </motion.div>
 
@@ -365,7 +309,9 @@ export default function About() {
                 <h3 className="text-2xl font-bold">Our Mission</h3>
               </div>
               <p className="text-lg leading-relaxed text-green-100">
-                At Danikom Ghana, we are dedicated to harnessing the rich heritage of African natural resources to create premium quality handcrafted products that enhance well-being and promote sustainability. Our mission is to empower local communities through ethical sourcing and fairtrade practices, while delivering exceptional unrefined shea butter, African black soap, and natural cosmetics that inspire confidence and nurture beauty. Together, we strive to cultivate a culture of innovation, integrity, and respect for our planet, ensuring that our products not only elevate our customers but also uplift the lives of those who contribute to their creation. We believe in the power of nature to transform lives and are committed to leading the way in the natural cosmetics industry with passion and purpose.
+                To specialize in the production and supply of natural shea
+                butter and the use of modern technology to produce innovative
+                and quality Shea products.
               </p>
             </motion.div>
           </div>
